@@ -540,6 +540,13 @@ form.form-horizontal input#email {
 	font-size: 17px;
 }
 
+.icon-email-error {
+	top: 0px;
+	right: 50px;
+	color: red;
+	font-size: 17px;
+}
+
 .error-msg-box {
 	font-size: 16px !important;
 	color: red;
