@@ -5,7 +5,7 @@
   "main": "bootstrap-birthday.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && httpster ."
+    "start": "echo npm start called!"
   },
   "repository": {
     "type": "git",
