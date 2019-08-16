@@ -5,7 +5,7 @@
   "main": "bootstrap-birthday.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ls && httpster ."
+    "start": "http-server ."
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/jyasveer/upwork-manny#readme",
   "dependencies": {
-    "express": "^3.21.2",
-    "httpster": "^1.0.4"
+    "http-server": "^0.11.1"
   }
 }
