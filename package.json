@@ -17,7 +17,7 @@
     "url": "https://github.com/jyasveer/upwork-manny/issues"
   },
   "homepage": "https://github.com/jyasveer/upwork-manny#readme",
-  "devDependencies": {
+  "dependencies": {
     "httpster": "^1.0.4"
   }
 }
