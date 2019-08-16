@@ -1,0 +1,550 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #333;
+}
+
+.form-main-wrap {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.form-align-center {
+	max-width: 800px;
+	width: 100%;
+	height: 600px;
+	background: #fff;
+	border-radius: 3px;
+	display: flex;
+}
+
+.form-horizontal {
+	background: #fff;
+	display: block;
+	box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, .35);
+	border-radius: 5px;
+	padding: 30px;
+	width: 100%;
+}
+
+.form-horizontal .input-group-addon {
+	background: transparent;
+	border: none;
+}
+
+.form-horizontal .input-group-addon select {
+	border: 1px solid #ccc;
+	border-radius: 6px !important;
+}
+
+form.form-horizontal input#pwd,
+form.form-horizontal input#Lname,
+form.form-horizontal input#Fname,
+form.form-horizontal input#email {
+	background-image: url("input-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: 100% 9px;
+	background-size: 80px;
+	padding-right: 60px;
+}
+
+form.form-horizontal input#Fname {
+	/*background-position: 105% -31px;*/
+	background-position: 115% 10px;
+}
+
+form.form-horizontal input#Lname {
+	background-position: 113% -31px;
+}
+
+form.form-horizontal input#pwd {
+	background-position: 99% -74px;
+}
+
+form.form-horizontal select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-overflow: ellipsis;
+	background-image: url("down-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 96% center;
+	background-size: 30px;
+	padding-right: 50px;
+	line-height: 150%;
+}
+
+form.form-horizontal::-ms-expand {
+	display: none;
+}
+
+.selected-flag {
+	height: 46px;
+	padding: 14px 16px 6px 6px !important;
+}
+
+#phone {
+	height: 46px;
+	width: 170px;
+	max-width: 170px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+div.fancy-select div.trigger {
+	width: 100% !important;
+	background-color: #fff !important;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	line-height: 42px;
+	padding: 2px 15px;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+div.fancy-select select:focus+div.trigger {
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+div.fancy-select ul.options.overflowing,
+div.fancy-select ul.options {
+	width: 100% !important;
+	background-color: #fff !important;
+	border: 1px solid #ccc;
+	color: #333;
+}
+
+div.fancy-select ul.options li.hover {
+	color: #000;
+}
+
+div.fancy-select ul.options li {
+	color: #333;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.select2 {
+	font-size: 18px;
+}
+
+.select2-container--default .select2-selection--single {
+	border: 1px solid #ccc;
+}
+
+.select2-container .select2-selection--single {
+	height: 42px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding: 2px 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 42px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 42px;
+}
+
+.ui-datepicker-calendar {
+	width: 50% !important;
+	float: left;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+	width: 50%;
+}
+
+#ui-datepicker-div {
+	width: 100%;
+	max-width: 746px;
+	padding: 15px;
+	border: none;
+	-webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ui-timepicker-div {
+	width: 50%;
+	float: left;
+	padding: 15px;
+}
+
+.ui_tpicker_time_label,
+.ui_tpicker_hour_label,
+.ui_tpicker_minute_label,
+.ui_tpicker_second_label,
+.ui_tpicker_millisec_label,
+.ui_tpicker_microsec_label,
+.ui_tpicker_timezone_label {
+	width: 50%;
+	float: left;
+}
+
+.ui_tpicker_time,
+.ui_tpicker_hour,
+.ui_tpicker_minute,
+.ui_tpicker_second,
+.ui_tpicker_millisec,
+.ui_tpicker_microsec,
+.ui_tpicker_timezone {
+	width: 50%;
+	float: right;
+	padding: 5px;
+}
+
+div.fancy-select div.trigger:after {
+	top: 22px;
+}
+
+.ui-datepicker div.ui-datepicker-buttonpane {
+	border: none;
+}
+
+.ui-datepicker-header.ui-widget-header {
+	background: transparent;
+	border: none;
+	padding: 7px 41px;
+}
+
+div.ui-widget-content {
+	color: #a9adb3;
+}
+
+table.ui-datepicker-calendar thead {
+	border-top: 1px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+table.ui-datepicker-calendar thead th {
+	padding: 5px;
+}
+
+.ui-widget-content a.ui-state-default {
+	background: transparent;
+	border: none;
+	color: #000;
+	text-align: center;
+	font-size: 14px;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	padding: 0;
+}
+
+.ui-widget-content a.ui-state-default:hover {
+	color: #b4e0f9;
+}
+
+.ui-widget-content a.ui-state-default.ui-state-active,
+.ui-widget-content .ui-datepicker-today a.ui-state-default {
+	background: #b4e0f9;
+	border-radius: 5px;
+}
+
+.ui-datepicker a.ui-datepicker-prev span,
+.ui-datepicker a.ui-datepicker-next span {
+	display: none;
+}
+
+div.ui-datepicker a.ui-datepicker-prev,
+div.ui-datepicker a.ui-datepicker-next {
+	background: url(cal-arrow.jpg) no-repeat 0 0px;
+	border: none;
+	width: 18px;
+	height: 18px;
+	left: 0px;
+	top: 12px;
+	cursor: pointer;
+}
+
+div.ui-datepicker a.ui-datepicker-next {
+	left: auto;
+	background-position: -10px 0px;
+	right: 0;
+}
+
+div.ui-datepicker a.ui-datepicker-prev,
+div.ui-datepicker a.ui-datepicker-next {
+	opacity: 0.8;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content {
+	float: right;
+	padding: 0;
+	margin: auto;
+	width: 48%;
+}
+
+.ui-datepicker dl {
+	margin: 0;
+}
+
+dl::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content button {
+	margin: 0;
+	background: transparent;
+	border: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+	opacity: 1;
+	text-transform: capitalize;
+	border-radius: 5px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content button:hover {
+	color: #000;
+	background: #b4e0f9;
+}
+
+.ui_tpicker_unit_hide {
+	display: none !important;
+}
+
+.ui-timepicker-div dl dt {
+	width: 30%;
+	line-height: 35px;
+	min-width: 35px;
+	margin-bottom: 10px;
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	color: #6d6d6d;
+}
+
+.ui-timepicker-div dl dd {
+	width: 70%;
+	padding: 0;
+	min-width: 35px;
+	margin-bottom: 10px;
+	line-height: 35px;
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ui-timepicker-div dl dd input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	color: #333;
+	height: auto;
+	font-weight: bold;
+}
+
+.ui-timepicker-div dl dd input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	color: #a9adb3;
+	height: auto;
+}
+
+.ui-timepicker-div dl dd .ui-slider {
+	height: 4px;
+	background: #e7e7e7;
+	border: none;
+}
+
+.ui-timepicker-div dl dd span.ui-slider-handle {
+	top: -9px;
+	background: #b9e0f7;
+	height: 22px;
+	width: 22px;
+	border-radius: 3px;
+	border: none;
+}
+
+.ui-timepicker-div dl dd span.ui-slider-handle.ui-state-hover,
+.ui-timepicker-div dl dd span.ui-slider-handle.ui-state-focus {
+	background: #48b1ee;
+}
+
+
+
+.custom-checkbox {
+	position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"]+label {
+	position: relative;
+	display: flex;
+	margin: 1px 0;
+	align-items: start;
+	color: #333;
+	transition: color 250ms cubic-bezier(.4, .0, .23, 1);
+	font-weight: normal;
+}
+
+.custom-checkbox input[type="checkbox"]+label>span {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	margin-right: 1em;
+	height: 24px;
+	background: transparent;
+	border: 12px solid #FFF;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+	overflow: hidden;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label>span {
+	border: 12px solid #b9e0f7;
+	animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
+	box-shadow: 0 0 0 0 #fff;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label>span::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 5.9px;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	transform: rotate(45deg);
+	transform-origin: 0% 100%;
+	animation: checkbox-check 125ms 250ms cubic-bezier(.4, .0, .23, 1) forwards;
+}
+
+.error {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: red;
+}
+
+.submit-btn {
+	background: none;
+	border: none;
+	background: red;
+
+	color: #fff;
+
+	width: 100%;
+
+	height: 100%;
+
+	padding: 10px;
+
+	border-radius: 10px;
+	-webkit-box-shadow: 9px 9px 9px rgba(0, 0, 0, .35);
+	box-shadow: 9px 9px 9px rgba(0, 0, 0, .35);
+	-webkit-transition: all .75s;
+	transition: all .75s;
+}
+
+.submit-btn:hover {
+	text-decoration: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #d42323;
+}
+
+.intl-tel-input .flag-dropdown .country-list {
+	width: 195px !important;
+}
+
+form.form-horizontal input#email {
+	background-image: url("email.jpg");
+
+	background-position: 99% -3px;
+
+	background-size: 47px;
+}
+
+
+@keyframes shrink-bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	33% {
+		transform: scale(.85);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes checkbox-check {
+	0% {
+		width: 0;
+		height: 0;
+		border-color: #212121;
+		transform: translate3d(0, 0, 0) rotate(45deg);
+	}
+
+	33% {
+		width: 2px;
+		height: 0;
+		transform: translate3d(0, 0, 0) rotate(45deg);
+	}
+
+	100% {
+		width: 7px;
+		height: 13px;
+		border-color: #212121;
+		transform: translate3d(0, -0.5em, 0px) rotate(45deg);
+	}
+}
+
+.icon-name-error {
+	top: 6px;
+	right: 17px;
+	color: red;
+	font-size: 17px;
+}
+
+.error-msg-box {
+	font-size: 16px !important;
+	color: red;
+}
+
+.intl-tel-input input {
+	padding-left: 39px;
+}
