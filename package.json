@@ -1,0 +1,19 @@
+{
+  "name": "upwork-manny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bootstrap-birthday.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyasveer/upwork-manny.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jyasveer/upwork-manny/issues"
+  },
+  "homepage": "https://github.com/jyasveer/upwork-manny#readme"
+}
